@@ -1,0 +1,130 @@
+Master Spring Boot in 30 Days
+
+Day 1: Introduction to Spring Boot
+- What is Spring Boot?
+- Key Features of Spring Boot
+- Setting Up Spring Boot Development Environment
+- Creating Your First Spring Boot Application
+
+Day 2: Spring Boot Basics - Part 1
+- Spring Boot Project Structure
+- Understanding Spring Boot Starter Projects
+- Spring Boot Auto-Configuration
+
+Day 3: Spring Boot Basics - Part 2
+- Introduction to Spring Boot Annotations
+- The Main Application Class
+
+Day 4: Dependency Injection in Spring Boot
+- What is Dependency Injection?
+- Using @Autowired Annotation
+- Constructor vs. Field Injection
+
+Day 5: Spring Boot Configuration
+- Application Properties and YAML Files
+- Profiles in Spring Boot
+- Custom Configuration using @Configuration
+
+Day 6: Creating REST APIs with Spring Boot - Part 1
+- Introduction to REST APIs
+- Creating Controllers with @RestController
+- Handling HTTP Methods: GET, POST, PUT, DELETE
+
+Day 7: Creating REST APIs with Spring Boot - Part 2
+- Request Parameters and Path Variables
+- Handling JSON with Jackson
+- Exception Handling in REST APIs
+
+Day 8: Spring Boot and Databases - Part 1
+- Introduction to Spring Data JPA
+- Configuring a Data Source
+- CRUD Operations with JPA Repositories
+
+Day 9: Spring Boot and Databases - Part 2
+- Custom Queries with @Query Annotation
+- Pagination and Sorting in Spring Data JPA
+
+Day 10: Spring Boot and Databases - Part 3
+- Introduction to Hibernate
+- Understanding Entity Relationships
+- Managing Transactions in Spring Boot
+
+Day 11: Spring Boot Security - Part 1
+- Introduction to Spring Security
+- Securing REST APIs with Basic Authentication
+- Configuring Spring Security
+
+Day 12: Spring Boot Security - Part 2
+- Role-Based Access Control
+- Custom User Authentication
+
+Day 13: Spring Boot Security - Part 3
+- JWT Authentication in Spring Boot
+- Implementing JWT Token Filters
+
+Day 14: Spring Boot Testing - Part 1
+- Introduction to Testing in Spring Boot
+- Unit Testing with JUnit and Mockito
+- Testing REST Controllers
+
+Day 15: Spring Boot Testing - Part 2
+- Integration Testing
+- Testing Repositories and Services
+
+Day 16: Spring Boot Testing - Part 3
+- MockMVC for Testing REST APIs
+- Testing Security Configurations
+
+Day 17: Spring Boot with Spring MVC
+- Introduction to Spring MVC
+- Model-View-Controller Pattern
+- Handling Forms in Spring MVC
+
+Day 18: Spring Boot and Thymeleaf
+- Integrating Thymeleaf with Spring Boot
+- Creating Dynamic Web Pages
+- Using Thymeleaf Templates
+
+Day 19-20: Spring Boot and Spring Cloud
+- Introduction to Microservices
+- Building Microservices with Spring Boot
+- Introduction to Spring Cloud Components
+
+Day 21-22: Spring Boot with Docker
+- Containerizing Spring Boot Applications
+- Writing Dockerfiles for Spring Boot
+- Running Spring Boot Apps in Docker
+
+Day 23: Spring Boot with Kafka
+- Introduction to Kafka
+- Integrating Kafka with Spring Boot
+- Producing and Consuming Messages
+
+Day 24: Spring Boot with RabbitMQ
+- Introduction to RabbitMQ
+- Messaging with RabbitMQ in Spring Boot
+
+Day 25: Spring Boot Actuator
+- Monitoring Spring Boot Applications
+- Using Actuator Endpoints
+
+Day 26: Spring Boot with GraphQL
+- Introduction to GraphQL
+- Integrating GraphQL with Spring Boot
+
+Day 27: Spring Boot Logging
+- Introduction to Logging
+- Configuring Logging Levels
+- Using Logback in Spring Boot
+
+Day 28: Spring Boot Performance Tuning
+-Optimizing Spring Boot Applications
+-Managing Memory and CPU Usage
+
+Day 29: Spring Boot Deployment
+-Deploying Spring Boot Applications to AWS
+-Configuring CI/CD with Jenkins
+
+Day 30: Best Practices and Project Development
+- Following Best Practices in Spring Boot
+- Starting a Spring Boot Project

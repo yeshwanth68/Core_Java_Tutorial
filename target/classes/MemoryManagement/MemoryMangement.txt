@@ -1,0 +1,137 @@
+### **Memory Management in Java**
+
+Memory management in Java is crucial for ensuring efficient performance and avoiding resource exhaustion. It is primarily handled by the **Java Virtual Machine (JVM)**, which automatically manages memory allocation and deallocation through **Garbage Collection (GC)**. Here's an in-depth look at Java's memory management:
+
+---
+
+#### **Key Memory Areas in the JVM**
+
+1. **Heap Memory:**
+   - **Purpose**: Used for dynamic memory allocation for Java objects and arrays.
+   - **Divisions**:
+     - **Young Generation**: Stores short-lived objects (newly created objects). It is further divided into:
+       - **Eden Space**: Where new objects are created.
+       - **Survivor Spaces (S0 and S1)**: Where objects that survive the initial garbage collection are moved.
+     - **Old Generation (Tenured Generation)**: Stores long-lived objects that survived multiple garbage collection cycles.
+     - **MetaSpace (Java 8 and onwards)**: Replaces PermGen and stores class metadata, method data, and constant pools.
+   
+2. **Stack Memory:**
+   - **Purpose**: Stores method call frames, local variables, and primitive data types. Each thread has its own stack memory, and it's smaller compared to heap memory.
+   - **Characteristics**: Memory is allocated and deallocated in a Last-In-First-Out (LIFO) manner.
+
+3. **Method Area**:
+   - **Purpose**: Stores runtime constant pool, method data, field data, and class structure data. Prior to Java 8, this was in the PermGen space, now it's part of MetaSpace.
+
+4. **Program Counter (PC) Register**:
+   - **Purpose**: Each thread has its own PC register, which holds the address of the currently executing instruction.
+
+5. **Native Method Stack**:
+   - **Purpose**: Stores native method information for methods written in languages like C/C++.
+
+---
+
+#### **Garbage Collection (GC)**
+
+Garbage Collection is the process of identifying and reclaiming memory that is no longer in use by the program, i.e., objects that are unreachable. Java developers do not manually deallocate memory; instead, the JVM's GC process handles this.
+
+1. **Minor GC**: Happens when the **Eden space** is full. It moves surviving objects to the **Survivor space**.
+2. **Major GC**: Occurs when the **Old Generation** is full. It cleans up long-lived objects.
+3. **Full GC**: Both Minor and Major GC are executed. It is generally more expensive in terms of performance.
+
+---
+
+#### **Common Garbage Collectors**
+
+1. **Serial Garbage Collector**: Best for applications with a single thread.
+2. **Parallel Garbage Collector**: Suitable for multi-threaded environments, performs GC in parallel.
+3. **CMS (Concurrent Mark Sweep) Garbage Collector**: Targets low pause times.
+4. **G1 (Garbage First) Garbage Collector**: The default garbage collector in modern JVMs, designed for low latency and large heaps.
+
+---
+
+### **Common Memory Management Interview Questions**
+
+#### 1. **What is the difference between Heap and Stack memory in Java?**
+   **Answer**:
+   - **Heap Memory**: Used for dynamic allocation of objects and arrays. All objects and their instance variables are stored in heap memory, and it is shared across threads.
+   - **Stack Memory**: Used for storing local variables, method calls, and reference variables. Each thread has its own stack memory, and it is faster than heap memory because of its fixed size and LIFO allocation order.
+
+#### 2. **What is Garbage Collection in Java, and how does it work?**
+   **Answer**:
+   - **Garbage Collection (GC)** is the process of automatically identifying and reclaiming unused memory in Java. The GC identifies objects that are no longer referenced by the program and clears them to free up memory. This prevents memory leaks.
+   - GC operates on **heap memory** and utilizes algorithms like Mark-Sweep, Mark-Compact, or Generational Garbage Collection.
+
+#### 3. **What is the difference between Minor GC and Major GC?**
+   **Answer**:
+   - **Minor GC**: This occurs in the **Young Generation** space, primarily affecting newly created objects.
+   - **Major GC**: Occurs in the **Old Generation** and reclaims memory for long-lived objects. Major GC is usually more expensive than Minor GC in terms of performance.
+   - **Full GC**: Involves both Minor and Major GC, impacting both generations. It is more time-consuming.
+
+#### 4. **What is the MetaSpace in Java?**
+   **Answer**:
+   - **MetaSpace** was introduced in Java 8, replacing the **PermGen** space. MetaSpace resides in native memory and is used to store class metadata such as methods, fields, and constants. Unlike PermGen, it dynamically resizes based on the application's needs.
+
+#### 5. **What causes a `java.lang.OutOfMemoryError: PermGen space` error?**
+   **Answer**:
+   - This error occurs when the **PermGen** space (used in Java versions prior to Java 8) becomes full. The PermGen space is where the JVM stores class metadata. In Java 8, this was replaced by **MetaSpace**, which is more flexible in resizing and therefore reduces the likelihood of this error.
+
+#### 6. **How can you avoid memory leaks in Java?**
+   **Answer**:
+   - **Memory leaks** occur when an application unintentionally holds references to objects that are no longer needed, preventing them from being garbage collected.
+   - To avoid memory leaks:
+     - Nullify object references when they are no longer required.
+     - Avoid static references to objects.
+     - Use tools like **VisualVM** or **Memory Analyzer Tool (MAT)** to detect memory leaks.
+
+#### 7. **What is the `finalize()` method in Java?**
+   **Answer**:
+   - The `finalize()` method is invoked by the garbage collector before an object is removed from memory. It is used for cleanup, but it is discouraged because its behavior is unpredictable, and there is no guarantee when or if `finalize()` will be called.
+   - As of Java 9, `finalize()` has been deprecated.
+
+#### 8. **What is the `System.gc()` method, and when should you use it?**
+   **Answer**:
+   - The `System.gc()` method is a request for the JVM to perform garbage collection. However, it is not guaranteed to execute immediately or at all, as the JVM ultimately decides when to run GC.
+   - **Best Practice**: Avoid explicitly calling `System.gc()` unless there is a compelling reason.
+
+#### 9. **How is memory allocated in Java?**
+   **Answer**:
+   - Memory is allocated in two main areas:
+     - **Heap**: For objects and arrays.
+     - **Stack**: For method calls, local variables, and reference variables.
+   - When an object is created, it is allocated on the heap. Local variables and references are stored in the stack memory.
+
+#### 10. **What are Soft, Weak, and Phantom References in Java?**
+   **Answer**:
+   - These reference types allow for more granular control over garbage collection:
+     - **SoftReference**: Objects can be reclaimed when the JVM runs out of memory.
+     - **WeakReference**: Objects are garbage collected when no strong references exist.
+     - **PhantomReference**: Allows you to perform actions after the object is collected by the GC but before the memory is reclaimed.
+
+---
+
+### **Advanced Interview Questions**
+
+#### 1. **What is the difference between Shallow Copy and Deep Copy in Java?**
+   **Answer**:
+   - **Shallow Copy**: Copies the reference of an object, meaning that changes to the copied object will affect the original object.
+   - **Deep Copy**: Creates a new copy of the object and all the objects it references, so the original object remains unchanged.
+
+#### 2. **What is memory fragmentation, and how does Java handle it?**
+   **Answer**:
+   - Memory fragmentation occurs when available memory is divided into small blocks, making it difficult to allocate contiguous memory.
+   - The JVM handles fragmentation through **compaction**, where it moves objects to eliminate gaps, creating more contiguous free space.
+
+#### 3. **What is a memory pool in the context of the JVM?**
+   **Answer**:
+   - A **memory pool** is a JVM-managed memory region where objects of a particular type are allocated. The heap is subdivided into pools like the **Eden Space**, **Survivor Spaces**, and the **Old Generation**.
+
+#### 4. **How do you monitor memory usage in a Java application?**
+   **Answer**:
+   - Use tools such as:
+     - **JVisualVM**
+     - **JConsole**
+     - **JMap**
+     - **JProfiler**
+   - You can also pass JVM arguments like `-Xms`, `-Xmx`, and `-XX:MaxMetaspaceSize` to monitor and optimize memory usage.
+
+---

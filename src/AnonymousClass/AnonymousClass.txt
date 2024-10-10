@@ -1,0 +1,12 @@
+Anonymous Class:
+===============
+
+An anonymous class in Java is a class that does not have a name and is declared and instantiated in a single expression. 
+They are used primarily for instantiating classes or interfaces at the point of use, typically in scenarios where you want to provide a 
+specific implementation of an interface or a subclass of a class without the need to formally define a separate named class.
+
+Characteristics of Anonymous Classes
+------------------------------------
+1.No Name: As the name implies, anonymous classes do not have a name.
+2.Instantiation: They are created at the point of instantiation, which makes them useful for concise code.
+3.Subclassing or Implementing: Anonymous classes can either extend a superclass or implement an interface.

@@ -1,0 +1,17 @@
+Types of Inheritance:
+--------------------
+1.Single Inheritance - A single class inherits from a parent class
+2.Multilevel Inheritance - A class inherits from a subclass, which in turn inherits from another class
+3.Multiple Inheritance - not applicable
+4.Hierrachical Inheritance - Multiple subclasses inherit from the same superclass.
+5.Hybrid Inheritance - not applicable
+
+
+Note: Java does not support multiple inheritance (a class cannot inherit from more than one class directly). 
+However, this can be achieved using interfaces.
+
+Advantages of Inheritance:
+-------------------------
+Code Reusability: Common code can be written in the superclass and reused by subclasses, reducing redundancy.
+Code Organization: Relationships between classes are clearly established, improving code maintainability.
+Extensibility: New classes can be easily added, extending existing functionality without modifying existing code.

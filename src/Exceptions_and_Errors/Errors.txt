@@ -1,0 +1,15 @@
+Errors
+======
+Errors are serious problems that a reasonable application should not catch. 
+They are typically related to the Java runtime system and indicate a failure that is outside the control of the program. 
+Errors are often caused by system-level issues.
+
+Characteristics of Errors:
+-------------------------
+1. Not Recoverable: Errors generally indicate serious problems, such as:
+
+OutOfMemoryError: Not enough memory to allocate new objects.
+StackOverflowError: The stack has overflowed due to too many nested method calls.
+NoClassDefFoundError: A class that was available at compile time is not found at runtime.
+
+2. Inherit from Error: All errors are subclasses of the Error class.

@@ -1,0 +1,47 @@
+Object Class:
+-------------
+The Object class in Java is the root superclass of all classes. Every class in Java implicitly or explicitly inherits from the Object class. 
+This means that the Object class provides some default behavior that all Java objects can use.
+
+Key Points About Object Class:
+------------------------------
+Root of the Java Class Hierarchy: All classes in Java inherit from the Object class, either directly or indirectly.
+
+Common Methods for All Objects: The Object class defines several methods that are available to every Java object, such as toString(), 
+equals(), hashCode(), getClass(), clone(), notify(), notifyAll(), and wait().
+
+
+1. toString():
+* Returns a string representation of the object.
+* By default, the toString() method returns a string that consists of the class name followed by the "@" 
+sign and the object's hashcode in hexadecimal form.
+
+2. equals(Object obj):
+* Compares the current object with the specified object for equality.
+* By default, equals() checks for reference equality (i.e., whether both references point to the same object).
+
+
+3. hashCode():
+* Returns an integer hash code for the object.
+* The hashCode() method is often used in conjunction with the equals() method, 
+especially when objects are stored in collections such as HashMap or HashSet.
+
+
+4. getClass():
+* Returns the runtime class of the object.
+* This method is used to get the Class object corresponding to the runtime type of the object.
+
+
+5. clone():
+* Creates and returns a copy (clone) of the object.
+* The clone() method can only be used if the class implements the Cloneable interface, otherwise it throws a CloneNotSupportedException.
+
+6. notify(), notifyAll(), wait():
+* These methods are part of Java's thread synchronization mechanism.
+notify() and notifyAll() are used to wake up threads that are waiting for a particular object’s lock, while wait() causes the current thread to 
+wait until another thread invokes notify() or notifyAll() on that object.
+
+
+7. finalize() (Deprecated from Java 9):
+* Called by the garbage collector before the object is destroyed.
+* It's deprecated and should no longer be relied upon for cleanup operations.

@@ -1,0 +1,23 @@
+Functional Interface
+====================
+A functional interface in Java is an interface that has exactly one abstract method. 
+These interfaces can have multiple default or static methods but only one abstract method. 
+They are used primarily to define a target type for lambda expressions and method references.
+
+Characteristics of Functional Interfaces
+========================================
+1.Single Abstract Method: It must contain exactly one abstract method.
+2.@FunctionalInterface Annotation: While it's not mandatory, it's a good practice to use the @FunctionalInterface annotation 
+to indicate that the interface is intended to be a functional interface. This annotation helps catch errors at compile time 
+if more than one abstract method is accidentally added.
+
+Common Functional Interfaces in Java
+====================================
+Java provides several built-in functional interfaces in the java.util.function package, such as:
+
+1.Runnable: Represents a task that can be run.
+2.Callable: Represents a task that can return a result and throw an exception.
+3.Consumer<T>: Accepts a single input argument and returns no result.
+4.Supplier<T>: Supplies a result of type T.
+5.Function<T, R>: Represents a function that accepts one argument and produces a result.
+6.Predicate<T>: Represents a boolean-valued function of one argument.

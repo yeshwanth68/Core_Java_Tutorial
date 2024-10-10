@@ -1,0 +1,17 @@
+Final Key Word:
+--------------
+
+The final keyword in Java is a non-access modifier that can be applied to classes, methods, and variables. 
+Its primary purpose is to restrict the modification of a class, method, or variable once it is assigned or declared.
+
+
+1.final with variable
+2.final with class
+3.final with methods
+4.final with parameters
+
+
+final variables: Cannot be reassigned after initialization.
+final methods: Cannot be overridden by subclasses.
+final classes: Cannot be extended by any other class.
+final parameters: Cannot be modified within the method body

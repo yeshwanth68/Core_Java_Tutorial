@@ -1,0 +1,11 @@
+Method Hiding:
+-------------
+
+Method Hiding in Java occurs when a static method in a superclass is redefined in a subclass. In such cases, the method in the subclass hides the method in the superclass. This is different from method overriding because method hiding works only with static methods, while method overriding works with non-static methods.
+
+When a static method is hidden, the version of the method that gets called is determined by the type of the class reference, not the object instance. This is because static methods are resolved at compile time (early binding).
+
+Key Points about Method Hiding:
+Static Methods: Method hiding can only occur with static methods. Non-static methods are overridden, not hidden.
+Class Reference: The method that gets executed is determined by the class reference type, not the object type.
+Compile-time Binding: In method hiding, the method is bound at compile time, unlike method overriding, which is bound at runtime.

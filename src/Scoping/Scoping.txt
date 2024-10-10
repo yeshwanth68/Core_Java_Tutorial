@@ -1,0 +1,9 @@
+Scoping in Java refers to the region or area within a program where a variable or object is accessible. Scoping helps in controlling the visibility and lifetime of variables, ensuring that they are only accessible where they are supposed to be and minimizing potential conflicts or errors.
+
+Types of Scope in Java:
+
+1.Class Scope (Static Scope)
+2.Instance Scope
+3.Method Scope
+4.Block Scope
+5.Loop Scope

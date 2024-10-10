@@ -1,0 +1,13 @@
+Enum
+====
+In Java, an enum (short for enumeration) is a special data type that enables you to define a collection of constants. 
+It provides a way to define a variable that can hold a set of predefined constants, making your code more readable and less error-prone.
+
+Basic Syntax of Enum
+--------------------
+An enum is defined using the enum keyword followed by the name of the enum and its constants. Here’s a simple example:
+
+
+enum Day {
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}

@@ -1,0 +1,52 @@
+Exception Handling
+==================
+Exception handling in Java is a powerful mechanism that enables developers to manage errors and exceptional conditions gracefully. 
+It allows a program to continue its execution even when unexpected events occur, instead of terminating abruptly.
+
+Key Concepts of Exception Handling
+----------------------------------
+
+1. Throwable Class: All exceptions and errors in Java are subclasses of the Throwable class. It has two main subclasses:
+
+Exception: For conditions that a program can catch and handle (checked and unchecked exceptions).
+Error: For serious issues that a reasonable application should not try to catch.
+
+2. Checked vs. Unchecked Exceptions:
+
+Checked Exceptions: These are checked at compile-time. If a method can throw a checked exception, it must either handle it or declare it with the throws keyword.
+Unchecked Exceptions: These are checked at runtime and include subclasses of RuntimeException. They do not need to be declared or caught.
+
+
+Basic Components of Exception Handling
+--------------------------------------
+Java uses several keywords for exception handling:
+
+1.try: The block of code that might throw an exception.
+2.catch: The block that handles the exception.
+3.finally: A block that executes after the try-catch blocks, regardless of whether an exception was thrown or not. 
+It is usually used for cleanup operations (like closing files or releasing resources).
+4.throw: Used to explicitly throw an exception.
+5.throws: Declares that a method may throw one or more exceptions.
+
+
+syntax:
+------
+try {
+    // Code that may throw an exception
+} catch (ExceptionType e) {
+    // Code to handle the exception
+} finally {
+    // Code that will always execute
+}
+
+throw:
+------
+The throw keyword is used to explicitly throw an exception. You can throw both checked and unchecked 
+exceptions within the body of a method or block of code.
+
+throws
+------
+The throws keyword is used in a method signature to declare that a method may throw one or more exceptions. 
+This informs the caller of the method that they should handle these exceptions.
+
+

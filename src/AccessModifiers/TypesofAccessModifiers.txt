@@ -1,0 +1,27 @@
+In Java, access modifiers are keywords used to set the visibility and accessibility of classes, methods, 
+variables, and constructors. There are four types of access modifiers:
+
+1.public
+2.private
+3.protected
+4.(default) (no keyword, known as package-private)
+
+1. public Access Modifier:
+Visibility: The public modifier allows access from anywhere in the program, both within the same package and from other packages.
+
+2. private Access Modifier:
+Visibility: The private modifier restricts access to within the same class. It is not accessible from other classes, even within the same package.
+
+3. protected Access Modifier:
+Visibility: The protected modifier allows access within the same package and in subclasses (even if the subclass is in a different package).
+
+4. Default (Package-private) Access Modifier:
+Visibility: If no access modifier is specified, it is considered default (also known as package-private), meaning the member is accessible within the same package only.
+
+
+Key Points:
+----------
+public: Accessible from anywhere.
+private: Accessible only within the class.
+protected: Accessible within the same package and in subclasses.
+default (no modifier): Accessible only within the same package.

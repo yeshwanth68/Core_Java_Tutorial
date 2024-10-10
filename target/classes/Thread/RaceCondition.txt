@@ -1,0 +1,23 @@
+Race Condition
+==============
+A race condition occurs when multiple threads access and manipulate shared data simultaneously, and the outcome depends on the 
+specific order in which the threads are executed. If not properly synchronized, this can lead to inconsistent or unexpected results, 
+as the threads "race" to complete their tasks.
+
+
+How Does a Race Condition Happen?
+--------------------------------
+A race condition occurs when:
+
+1.Two or more threads access a shared resource (e.g., a variable) simultaneously.
+2.At least one of the threads modifies the shared resource.
+3.The outcome depends on the non-deterministic timing of thread execution.
+
+
+Solving Race Conditions
+------------------------
+To prevent race conditions, you can synchronize the access to shared resources using mechanisms like:
+
+1.synchronized keyword: Makes a method or block of code thread-safe by allowing only one thread to execute it at a time.
+2.Locks (ReentrantLock): A more flexible alternative to synchronized that provides explicit locking and unlocking.
+3.Atomic variables (AtomicInteger, etc.): Special classes that provide thread-safe operations without the need for explicit synchronization.

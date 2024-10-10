@@ -1,0 +1,23 @@
+Exceptions
+==========
+Exceptions are conditions that occur during the execution of a program that disrupt the normal flow of instructions. 
+They are typically caused by conditions that a program can catch and handle.
+
+Characteristics of Exceptions:
+------------------------------
+Checked Exceptions: These are exceptions that are checked at compile time. If a method can throw a checked exception, 
+it must either handle it with a try-catch block or declare it using the throws keyword in the method signature. 
+
+For example:
+
+IOException
+SQLException
+
+Unchecked Exceptions: These are exceptions that are not checked at compile time. 
+They derive from RuntimeException and can occur anywhere in the program. 
+
+Common examples include:
+
+NullPointerException
+ArrayIndexOutOfBoundsException
+ArithmeticException

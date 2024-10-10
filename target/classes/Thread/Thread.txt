@@ -1,0 +1,41 @@
+Thread
+======
+In Java, a thread is a lightweight process that allows concurrent execution of parts of a program. Each thread runs independently, 
+and multiple threads can run simultaneously, making it possible to perform multiple tasks at once (concurrency). 
+Java provides built-in support for threads through the java.lang.Thread class and the java.lang.Runnable interface.
+
+Ways to Create a Thread in Java
+-------------------------------
+1.Extending the Thread Class
+2. Implementing the Runnable Interface
+
+
+1. Extending the Thread Class
+-----------------------------
+You can create a thread by extending the Thread class and overriding its run() method, which contains the code the thread executes.
+
+
+2. Implementing the Runnable Interface
+--------------------------------------
+Alternatively, you can create a thread by implementing the Runnable interface. This is a better approach when you want to use multiple 
+inheritance.
+
+
+Key Methods of the Thread Class
+-------------------------------
+1.start(): Starts the execution of the thread; it internally calls the run() method.
+2.run(): Contains the code to be executed by the thread.
+3.sleep(long millis): Puts the thread to sleep for the specified number of milliseconds.
+4.join(): Waits for the thread to die.
+5.getName(): Returns the name of the thread.
+6.setName(String name): Sets the name of the thread.
+
+Thread Lifecycle
+-----------------
+A thread goes through several stages during its life:
+
+1.New: When a thread is created but not yet started (using new Thread()).
+2.Runnable: When the thread is ready to run, either waiting for the CPU or executing.
+3.Blocked/Waiting: When a thread is temporarily inactive, waiting for resources or another thread to complete.
+4.Timed Waiting: When a thread is sleeping or waiting for a specific amount of time (sleep(), wait() with timeout).
+5.Terminated: When the thread has finished executing

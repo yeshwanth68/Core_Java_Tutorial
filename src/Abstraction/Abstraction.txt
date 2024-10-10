@@ -1,0 +1,21 @@
+Abstraction:
+-----------
+Abstraction is one of the fundamental concepts of Object-Oriented Programming (OOP) in Java. 
+It is the process of hiding the internal implementation details of a class and only showing the essential features or functionalities to the users. 
+In simpler terms, abstraction focuses on what an object does rather than how it does it.
+
+Java achieves abstraction through:
+
+1.Abstract Classes
+2.Interfaces
+
+
+1. Abstract Class
+An abstract class in Java is a class that is declared with the abstract keyword. Abstract classes cannot be instantiated directly; 
+they are meant to be subclassed. 
+An abstract class can have both abstract methods (methods without implementation) and concrete methods (methods with implementation).
+
+
+2. Interfaces
+An interface in Java is a completely abstract class that contains only abstract methods (until Java 8, where interfaces can also have default and static methods). 
+Interfaces specify what a class must do but not how it does it.

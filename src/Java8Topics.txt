@@ -1,0 +1,178 @@
+## **Java 8 Topics: Beginner to Advanced**
+
+### 1. **Introduction to Java 8**
+   - Overview of Java 8 features
+   - Importance of functional programming in Java 8
+   - Differences between Java 7 and Java 8
+
+### 2. **Lambda Expressions**
+   - Syntax of lambda expressions
+   - Using lambda expressions in collections
+   - Functional interfaces
+     - Definition of functional interfaces
+     - Predefined functional interfaces: `Function`, `Predicate`, `Consumer`, and `Supplier`
+     - `@FunctionalInterface` annotation
+   - Passing lambda expressions to methods
+   - Capturing and accessing variables inside lambda expressions
+   - Limitations and restrictions of lambda expressions
+
+### 3. **Method References**
+   - Types of method references:
+     - Reference to a static method
+     - Reference to an instance method
+     - Reference to a constructor
+   - Syntax and usage of method references
+
+### 4. **Functional Interfaces**
+   - Concept of functional interfaces
+   - Predefined functional interfaces in `java.util.function` package
+     - `Predicate<T>`
+     - `Function<T, R>`
+     - `Consumer<T>`
+     - `Supplier<T>`
+     - `BiFunction<T, U, R>`
+   - Custom functional interfaces
+
+### 5. **Default Methods in Interfaces**
+   - Motivation for default methods
+   - Syntax and implementation of default methods
+   - Resolving conflicts with multiple inheritance
+   - Practical examples
+
+### 6. **Streams API**
+   - Introduction to Streams
+   - Streams vs Collections
+   - Creating Streams:
+     - From collections
+     - From arrays
+     - Infinite streams (using `generate()` and `iterate()`)
+   - Stream operations:
+     - Intermediate operations:
+       - `map()`
+       - `filter()`
+       - `distinct()`
+       - `sorted()`
+       - `limit()`
+       - `flatMap()`
+     - Terminal operations:
+       - `forEach()`
+       - `collect()`
+       - `reduce()`
+       - `count()`
+       - `min()` and `max()`
+       - `findFirst()`, `findAny()`
+       - `anyMatch()`, `allMatch()`, `noneMatch()`
+   - Parallel Streams:
+     - Introduction to parallel streams
+     - Benefits of parallel streams
+     - How to convert sequential streams to parallel streams
+   - Working with primitive streams: `IntStream`, `LongStream`, `DoubleStream`
+   - Collectors class:
+     - Collecting data with `Collectors.toList()`, `toSet()`, `toMap()`
+     - Grouping and partitioning using `groupingBy()` and `partitioningBy()`
+
+### 7. **Optional Class**
+   - Introduction to `Optional`
+   - Creating an `Optional` object: `empty()`, `of()`, and `ofNullable()`
+   - Checking presence of value: `isPresent()`, `ifPresent()`
+   - Handling absent values: `orElse()`, `orElseGet()`, `orElseThrow()`
+   - Chaining `Optional` operations with `map()`, `flatMap()`
+   - Best practices with `Optional`
+
+### 8. **Date and Time API (java.time)**
+   - Problems with `java.util.Date` and `java.util.Calendar`
+   - New classes in the `java.time` package:
+     - `LocalDate`
+     - `LocalTime`
+     - `LocalDateTime`
+     - `ZonedDateTime`
+     - `Period` and `Duration`
+   - Formatting and parsing dates:
+     - `DateTimeFormatter`
+   - Manipulating date and time:
+     - Adding and subtracting dates
+     - Comparing dates and times
+   - Working with time zones:
+     - `ZoneId` and `ZoneOffset`
+   - Best practices for using the new Date and Time API
+
+### 9. **Stream API with Advanced Use Cases**
+   - Stream reduction and mutable reduction with `reduce()`
+   - Custom collectors with `Collector` interface
+   - Grouping data with `Collectors.groupingBy()`
+   - Partitioning data with `Collectors.partitioningBy()`
+   - Combining multiple collectors using `Collectors.mapping()`
+   - Stream sorting and custom comparators
+   - Stream API performance considerations
+   - Use of parallel streams and performance impact
+
+### 10. **New Features in `java.util` Package**
+   - `Map` improvements:
+     - `forEach()` method
+     - `computeIfAbsent()`, `computeIfPresent()`
+     - `getOrDefault()`
+     - `merge()`
+     - `putIfAbsent()`
+   - `List` and `Set` improvements:
+     - New default methods like `removeIf()`
+     - `spliterator()`
+   - `Comparator` improvements:
+     - `thenComparing()`
+     - `nullsFirst()` and `nullsLast()`
+     - `comparingInt()`, `comparingDouble()`, etc.
+
+### 11. **Concurrency Enhancements**
+   - Introduction to `CompletableFuture`
+   - Asynchronous programming with `CompletableFuture`
+     - `supplyAsync()`, `thenApply()`, `thenAccept()`
+     - Handling errors with `exceptionally()`, `handle()`
+   - Combining multiple `CompletableFuture` instances
+   - ForkJoinPool enhancements for parallel processing
+   - `java.util.concurrent` improvements in Java 8
+
+### 12. **Nashorn JavaScript Engine**
+   - Introduction to Nashorn
+   - Embedding JavaScript code within Java using Nashorn
+   - Running JavaScript code in Java using `ScriptEngine`
+   - Interacting between Java and JavaScript
+
+### 13. **New Features in Java Annotations**
+   - Repeating annotations
+   - Type annotations (`@Target`, `@Retention`)
+   - Using annotations in method parameters and local variables
+   - Use of `@FunctionalInterface` annotation
+
+### 14. **Miscellaneous Features**
+   - Static methods in interfaces
+   - Improved Type Inference for generics (e.g., `List.of()`)
+   - The `@SafeVarargs` annotation
+   - PermGen space removal and Metaspace introduction
+
+---
+
+## **Advanced Topics and Real-World Use Cases**
+
+### 15. **Advanced Functional Programming in Java**
+   - Higher-order functions
+   - Function composition using `andThen()`, `compose()`
+   - Currying and partial application with lambdas
+   - Practical examples of advanced functional patterns
+
+### 16. **Best Practices and Common Pitfalls in Java 8**
+   - Using `Optional` correctly and avoiding misuse
+   - Stream API performance tips and best practices
+   - Avoiding side-effects in streams
+   - Handling checked exceptions in lambda expressions
+   - Managing parallel streams and thread safety
+
+### 17. **Design Patterns Using Java 8**
+   - Strategy pattern with lambda expressions
+   - Factory pattern using method references
+   - Observer pattern using `CompletableFuture`
+   - Command pattern using functional interfaces
+
+### 18. **Refactoring Legacy Code to Java 8**
+   - Refactoring loops into streams
+   - Replacing anonymous inner classes with lambda expressions
+   - Using method references in place of anonymous methods
+   - Converting traditional `if-else` logic into functional code

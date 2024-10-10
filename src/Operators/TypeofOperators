@@ -1,0 +1,26 @@
+1.Unary Operator
+  1. Postfix - a++, a--
+  2. Prefix - --a,++a
+  
+2.Arithmetic Operators
+  1. Multiplicative - * / %
+  2. Additive - + -
+  
+3.Shift Operators - << >> >>>
+
+4.Relational Operators 
+  1.comparison -  = < > <= >= instanceof
+  2.equality -	== !=
+  
+5.Bitwise Operators
+  1. Bitwise AND - &
+  2. Bitwise XOR - ^
+  3. Bitwise - | 
+  
+6.Logical Operators
+  1. Logical AND - &&
+  2. Logical OR - ||
+  
+7.Ternary Operators - ? :
+
+8.Assignment Operators - = += -= *= /= %= &= ^= |= <<= >>= >>>=

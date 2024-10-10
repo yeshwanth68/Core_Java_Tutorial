@@ -1,0 +1,114 @@
+### 1. **Lambda Expressions**
+   - Basic syntax and use cases
+   - How lambdas improve code readability
+   - Functional interfaces and usage with lambdas
+   - Capturing variables in lambda expressions
+   - Differences between anonymous classes and lambda expressions
+
+### 2. **Functional Interfaces**
+   - Introduction to functional interfaces (`@FunctionalInterface`)
+   - Built-in functional interfaces:
+     - `Predicate<T>`
+     - `Function<T, R>`
+     - `Consumer<T>`
+     - `Supplier<T>`
+     - `BiFunction<T, U, R>`
+   - Custom functional interfaces
+   - How to use functional interfaces with lambdas
+
+### 3. **Streams API**
+   - What is a Stream and how it differs from collections
+   - Stream creation: from collections, arrays, or custom sources
+   - Intermediate operations:
+     - `filter()`
+     - `map()`
+     - `flatMap()`
+     - `distinct()`
+     - `sorted()`
+   - Terminal operations:
+     - `forEach()`
+     - `collect()`
+     - `reduce()`
+     - `count()`
+     - `min()`, `max()`
+   - Lazy evaluation in streams
+   - Parallel streams: performance benefits and drawbacks
+   - Real-world usage of streams (e.g., filtering, mapping, and data transformations)
+
+### 4. **Method References**
+   - What are method references?
+   - Types of method references:
+     - Static method reference
+     - Instance method reference
+     - Constructor reference
+   - When to use method references vs. lambdas
+
+### 5. **Optional Class**
+   - Why `Optional` was introduced (null safety)
+   - Creating an `Optional`: `of()`, `ofNullable()`, and `empty()`
+   - Methods: `isPresent()`, `ifPresent()`, `orElse()`, `orElseGet()`, `orElseThrow()`
+   - Chaining with `map()` and `flatMap()`
+   - Best practices for using `Optional`
+
+### 6. **Default Methods in Interfaces**
+   - What are default methods and why they were introduced
+   - Syntax of default methods in interfaces
+   - How default methods impact multiple inheritance
+   - Resolving conflicts in multiple inheritance
+
+### 7. **Stream Collectors**
+   - Basic collectors: `Collectors.toList()`, `toSet()`, `toMap()`
+   - Grouping data with `Collectors.groupingBy()`
+   - Partitioning data with `Collectors.partitioningBy()`
+   - Using `Collectors.joining()` for string concatenation
+   - Combining collectors (e.g., multi-level grouping)
+
+### 8. **Date and Time API (`java.time`)**
+   - Problems with `Date` and `Calendar` classes pre-Java 8
+   - Classes introduced in `java.time`: `LocalDate`, `LocalTime`, `LocalDateTime`, `ZonedDateTime`
+   - Formatting and parsing with `DateTimeFormatter`
+   - Manipulating date and time (adding, subtracting, comparing)
+   - Working with time zones: `ZoneId`, `ZoneOffset`
+   - Period and Duration classes for time calculations
+
+### 9. **Streams vs Loops**
+   - Differences between traditional loops and streams
+   - How streams improve code readability and performance
+   - Performance impact of parallel streams vs regular loops
+
+### 10. **Functional Programming Concepts**
+   - Pure functions, immutability, and statelessness
+   - Higher-order functions: functions as arguments or return values
+   - Closures and capturing variables in lambdas
+   - Functional composition with `andThen()`, `compose()`
+
+### 11. **Collectors and Mutable Reduction**
+   - Using `collect()` to perform mutable reduction
+   - Collectors for summing, averaging, and reducing operations
+   - Custom collectors and how they work with streams
+
+### 12. **Map Enhancements in Java 8**
+   - New methods in `Map` interface:
+     - `getOrDefault()`
+     - `putIfAbsent()`
+     - `computeIfAbsent()`, `computeIfPresent()`
+     - `merge()`
+   - Practical usage of new `Map` methods
+
+### 13. **Concurrency Enhancements**
+   - Introduction to `CompletableFuture`
+   - Asynchronous programming with `CompletableFuture`
+     - `supplyAsync()`, `thenApply()`, `thenAccept()`, `thenRun()`
+     - Combining multiple `CompletableFuture`s
+   - ForkJoinPool improvements for parallel processing
+
+### 14. **Method Hiding vs Overriding**
+   - Method hiding with static methods in inheritance
+   - Difference between method hiding and overriding
+   - Example use cases in real-world applications
+
+### 15. **Best Practices in Java 8**
+   - Using `Optional` for null safety and avoiding `NullPointerException`
+   - Avoiding side effects in lambda expressions
+   - When to use parallel streams and when to avoid them
+   - Refactoring legacy code to take advantage of Java 8 features
