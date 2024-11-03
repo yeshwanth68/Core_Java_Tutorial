@@ -1,0 +1,15 @@
+Collections
+===========
+Collections represent a framework that provides an architecture to store and manipulate a group of objects. Collections can be used to 
+perform various operations such as searching, sorting, insertion, manipulation, and deletion. 
+The Collections Framework includes interfaces, classes, and algorithms to support data structure operations.
+
+
+Types of Collections in Java
+----------------------------
+Java collections are mainly divided into three categories:
+
+1.List
+2.Set
+3.Queue
+4.Additionally, there's a special type called Map, which is not part of the Collection interface but is part of the Collections Framework.

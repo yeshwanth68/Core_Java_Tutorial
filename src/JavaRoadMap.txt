@@ -1,0 +1,18 @@
+Complete Roadmap to Become a Java Developer: 
+
+Learn these things (preferably) in the given order:
+
+1. Core Java (fundamentals of Java programming language)
+📌 Core Java Concepts: Master the basics variables, data types, control structures, files, exception handling etc.
+ 📌 Object-Oriented Programming (OOP): Understand key principles like encapsulation, inheritance, and polymorphism.
+2. Maven 
+ 📌 Learn popular build tools for project management and dependencies.
+3. Spring Core, Spring MVC, and Spring AOP
+4. Spring Boot and REST APIs (Restful Web Services)
+5. Spring Data - JPA, Hibernate (with H2, MySQL, MongoDB and Redis)
+6. Testing (JUnit 5, JPA Test, MockMVC, etc.)
+7. Spring Security 
+8. Microservices and Spring Cloud 
+9. Docker and Kubernetes
+10. Deployment of Spring Boot Apps on Cloud (AWS, Azure or Google Cloud)
+11. Optional - Serverless, Batch processing with Spring, etc.
