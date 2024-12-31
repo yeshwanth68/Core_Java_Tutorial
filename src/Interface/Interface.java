@@ -5,6 +5,8 @@ interface A {
 	void show();
 
 	void config();
+	
+	void pay();
 }
 
 class B implements A {
@@ -19,6 +21,13 @@ class B implements A {
 
 		System.out.println("in config");
 
+	}
+
+	@Override
+	public void pay() {
+		
+		System.out.println("hi pay..");
+		
 	}
 
 }

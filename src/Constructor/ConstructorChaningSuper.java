@@ -15,6 +15,7 @@ class Dog extends Animal {
 
 	// Subclass constructor
 	Dog(String name, String breed) {
+
 		super(name); // Calling superclass constructor
 		this.breed = breed;
 		System.out.println("Dog constructor called.");
